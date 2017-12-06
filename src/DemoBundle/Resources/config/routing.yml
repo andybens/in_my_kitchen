@@ -1,0 +1,30 @@
+demo_homepage:
+    path:     /site
+    defaults: { _controller: DemoBundle:Default:index }
+
+
+
+
+view_services_route:
+    path:     /services
+    defaults: { _controller: DemoBundle:Default:viewPost }
+
+create_services_route:
+    path:     /services/create
+    defaults: { _controller: DemoBundle:Default:createPost }
+
+update_services_route:
+    path:     /services/update/{id}
+    defaults: { _controller: DemoBundle:Default:updatePost }
+
+delete_services_route:
+    path:     /services/delete/{id}
+    defaults: { _controller: DemoBundle:Default:deletePost }
+
+show_services_route:
+    path:     /services/show/{id}
+    defaults: { _controller: DemoBundle:Default:showPost }
+
+
+
+

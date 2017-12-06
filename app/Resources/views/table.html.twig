@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <a href="{{ absolute_url(asset('')) }}app_dev.php/services/create" class="btn btn-primary">POST</a>
+  </div>
+  <p></p>
+<h3> Recipes List </h3>
+  <p></p>
+<table class="table table-striped table-hover table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Category</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for post in posts%}
+    <tr>
+      <td>{{post.title}}</td>
+      <td>{{post.description}}</td>
+      <td>{{post.category}}</td>
+      <td>
+      <a href="{{ absolute_url(asset('')) }}app_dev.php/services/show/{{post.id}}" class="btn btn-primary btn-sm">View</a>
+      <a href="{{ absolute_url(asset('')) }}app_dev.php/services/update/{{post.id}}" class="btn btn-success">Edit</a>
+      <a href="{{ absolute_url(asset('')) }}app_dev.php/services/delete/{{post.id}}" class="btn btn-danger">Delete</a>
+      </td>
+    </tr>
+    {% else%}
+    <tr>
+      <td>No records found</td>
+    </tr>
+    {% endfor%}
+  </tbody>
+</table>
+</div>

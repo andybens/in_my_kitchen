@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <a href="{{ absolute_url(asset('')) }}app_dev.php/services/create" class="btn btn-primary">POST</a>
+    <a href="{{ absolute_url(asset('')) }}app.php/services/create" class="btn btn-primary">POST</a>
   </div>
   <p></p>
 <h3> Recipes List </h3>
@@ -21,9 +21,9 @@
       <td>{{post.description}}</td>
       <td>{{post.category}}</td>
       <td>
-      <a href="{{ absolute_url(asset('')) }}app_dev.php/services/show/{{post.id}}" class="btn btn-primary btn-sm">View</a>
-      <a href="{{ absolute_url(asset('')) }}app_dev.php/services/update/{{post.id}}" class="btn btn-success">Edit</a>
-      <a href="{{ absolute_url(asset('')) }}app_dev.php/services/delete/{{post.id}}" class="btn btn-danger">Delete</a>
+      <a href="{{ absolute_url(asset('')) }}app.php/services/show/{{post.id}}" class="btn btn-primary btn-sm">View</a>
+      <a href="{{ absolute_url(asset('')) }}app.php/services/update/{{post.id}}" class="btn btn-success">Edit</a>
+      <a href="{{ absolute_url(asset('')) }}app.php/services/delete/{{post.id}}" class="btn btn-danger">Delete</a>
       </td>
     </tr>
     {% else%}

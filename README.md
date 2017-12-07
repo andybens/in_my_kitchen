@@ -3,12 +3,14 @@ In my Kitchen
 ========================
 Welcom to In my kitchen&Co website, feel free to discover all the recipes you want and don't hesitate to add your favorite dishes
 
-Designed by Oualid and Andrea with Symfony Framework
+Designed by Andrea Bensimhon and Oualid Boushaba with Symfony Framework
 
 
 Enjoy!
 
+
 Sources :
+
 [1]:  https://symfony.com/doc/3.3/setup.html
 [6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
 [7]:  https://symfony.com/doc/3.3/doctrine.html

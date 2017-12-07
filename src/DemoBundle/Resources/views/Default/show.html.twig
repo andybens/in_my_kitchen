@@ -11,7 +11,7 @@
          <p class="list-group-item">{{post.title}}</p>
          <p class="list-group-item">{{post.description}}</p>
          <p class="list-group-item"> {{post.category}}</p>
-        <p class="list-group-item"> <a href="{{ absolute_url(asset('')) }}app.php/services" class="btn btn-primary btn-sm">Back</a></p>
+        <p class="list-group-item"> <a href="{{ path("view_services_route") }}" class="btn btn-primary btn-sm">Back</a></p>
       </div>
    </div>
    {% include'::footer.html.twig' %}

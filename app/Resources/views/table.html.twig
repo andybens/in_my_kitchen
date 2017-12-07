@@ -21,9 +21,10 @@
       <td>{{post.description}}</td>
       <td>{{post.category}}</td>
       <td>
-      <a href="{{ absolute_url(asset('')) }}app.php/services/show/{{post.id}}" class="btn btn-primary btn-sm">View</a>
-      <a href="{{ absolute_url(asset('')) }}app.php/services/update/{{post.id}}" class="btn btn-success">Edit</a>
-      <a href="{{ absolute_url(asset('')) }}app.php/services/delete/{{post.id}}" class="btn btn-danger">Delete</a>
+
+      <a href="{{ path('show_services_route', {'id':post.id}) }}" class="btn btn-primary btn-sm">View</a>
+      <a href="{{ path('update_services_route', {'id':post.id}) }}" class="btn btn-success">Edit</a>
+      <a href="{{ path('delete_services_route', {'id':post.id}) }}" class="btn btn-danger">Delete</a>
       </td>
     </tr>
     {% else%}

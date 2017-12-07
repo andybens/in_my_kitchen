@@ -3,7 +3,7 @@
 {% block body %}
   {% include'::navbar.html.twig'  %}
    <div class="container">
-     <a href="{{ absolute_url(asset('')) }}app.php/services" class="btn btn-primary">Back</a>
+     <a href="{{ path("view_services_route") }}" class="btn btn-primary">Back</a>
      <h3>update POSTS</h3>
      {{ form_start(form) }}
      {{ form_widget(form) }}

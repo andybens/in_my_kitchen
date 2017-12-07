@@ -1,11 +1,12 @@
 <div class="container">
   <div class="row">
-    <a href="{{ absolute_url(asset('')) }}app.php/services/create" class="btn btn-primary">POST</a>
+
+    <a href="{{ path("create_services_route") }}" class="btn btn-primary">POST</a>
   </div>
   <p></p>
 <h3> Recipes List </h3>
   <p></p>
-<table class="table table-striped table-hover table-bordered">
+<table class="table table-striped table-hover table-bordered col-xl-auto">
   <thead class="thead-dark">
     <tr>
       <th>Title</th>
@@ -21,7 +22,6 @@
       <td>{{post.description}}</td>
       <td>{{post.category}}</td>
       <td>
-
       <a href="{{ path('show_services_route', {'id':post.id}) }}" class="btn btn-primary btn-sm">View</a>
       <a href="{{ path('update_services_route', {'id':post.id}) }}" class="btn btn-success">Edit</a>
       <a href="{{ path('delete_services_route', {'id':post.id}) }}" class="btn btn-danger">Delete</a>

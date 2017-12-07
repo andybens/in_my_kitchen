@@ -1,3 +1,17 @@
+
+In my Kitchen
+========================
+Welcom to In my kitchen&Co website, feel free to discover all the recipes you want and don't hesitate to add your favorite dishes
+
+Designed by Oualid and Andrea with Symfony Framework
+
+
+
+
+
+
+
+
 Symfony Standard Edition
 ========================
 

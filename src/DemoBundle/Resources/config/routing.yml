@@ -1,5 +1,5 @@
 demo_homepage:
-    path:     /site
+    path:     /
     defaults: { _controller: DemoBundle:Default:index }
 
 
@@ -24,7 +24,3 @@ delete_services_route:
 show_services_route:
     path:     /services/show/{id}
     defaults: { _controller: DemoBundle:Default:showPost }
-
-
-
-

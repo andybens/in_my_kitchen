@@ -1,5 +1,5 @@
 
-In my Kitchen
+In my Kitchen & Co
 ========================
 Welcom to In my kitchen&Co website, feel free to discover all the recipes you want and don't hesitate to add your favorite dishes
 
